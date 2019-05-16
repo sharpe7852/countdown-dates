@@ -25,7 +25,7 @@ class CountdownCard extends HTMLElement {
 
       var daysLeft = this.date_diff(eventToday);
       if (daysLeft < 0) {
-        age = age + 1;
+        age = age + 2;
         daysLeft = this.date_diff(mm + '/' + dd + '/' + parseInt(todayYear+1));
       }
 
