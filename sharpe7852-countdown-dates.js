@@ -25,12 +25,12 @@ class CountdownCard extends HTMLElement {
 
       var daysLeft = this.date_diff(eventToday);
       if (daysLeft < 0) {
-        age = age + 2;
+        age = age + 1;
         daysLeft = this.date_diff(mm + '/' + dd + '/' + parseInt(todayYear+1));
       }
 
       if (age > -1) {
-        var daysLeft = (this.config.show_age ? "" + age + "yrs in " : "") + daysLeft;
+        var daysLeft = (this.config.show_age ? "age " + age + ", " : "") + daysLeft;
       }
       
       line += `
@@ -78,7 +78,6 @@ class CountdownCard extends HTMLElement {
         display: table-cell;
         
       }
-
       .row .name
       {
         display: table-cell;
