@@ -30,7 +30,7 @@ class CountdownCard extends HTMLElement {
       }
 
       if (age > -1) {
-        var daysLeft = (this.config.show_age ? "age " + age + " in " : "") + daysLeft;
+        var daysLeft = (this.config.show_age ? "" + age + " in " : "") + daysLeft;
       }
       
       line += `
